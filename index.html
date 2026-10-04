@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio Phạm Quốc Huy</title>
+  <meta name="description"
+    content="Portfolio cá nhân của Phạm Quốc Huy - Content Creator, Video Editor, Content Writer và Software Developer.">
+  <link rel="icon" type="image/png" href="img/favicon.png?v=6">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png?v=6">
+  <link rel="apple-touch-icon" href="img/favicon.png?v=6">
+
+  <!-- Google Fonts: Times/Editorial Serif + Josefin Sans + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Josefin+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=70">
+</head>
+
+<body>
+  <!-- Paper texture overlay -->
+  <div class="paper-texture-bg" aria-hidden="true"></div>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <img src="img/logo-icon.png?v=10" alt="PQH Logo" class="logo-badge-img" width="40" height="40"
+          style="width: 40px; height: 40px; max-width: 40px; max-height: 40px; object-fit: contain; flex-shrink: 0; display: block; border-radius: 50%;">
+        <div class="logo-text">
+          <span class="logo-name">Phạm Quốc Huy</span>
+          <span class="logo-tag">Creative & Developer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Trang chủ</a></li>
+          <li><a href="#about" class="nav-link">Thông tin</a></li>
+          <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+          <li><a href="#ai-products" class="nav-link">Sản phẩm AI</a></li>
+          <li><a href="#editor" class="nav-link">Biên tập video</a></li>
+          <li><a href="#developer" class="nav-link">Lập trình</a></li>
+          <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action buttons -->
+      <div class="header-actions">
+        <!-- Mobile hamburger -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Mở menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <img src="img/logo-icon.png?v=10" alt="PQH Logo" class="logo-badge-img" width="36" height="36"
+          style="width: 36px; height: 36px; max-width: 36px; max-height: 36px; object-fit: contain; flex-shrink: 0; display: block; border-radius: 50%;">
+        <span class="logo-name">Phạm Quốc Huy</span>
+      </div>
+      <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Đóng menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-link">Trang chủ</a></li>
+      <li><a href="#about" class="mobile-link">Thông tin cá nhân</a></li>
+      <li><a href="#experience" class="mobile-link">Kinh nghiệm chuyên môn</a></li>
+      <li><a href="#ai-products" class="mobile-link">Sản phẩm AI</a></li>
+      <li><a href="#editor" class="mobile-link">Biên tập video</a></li>
+      <li><a href="#developer" class="mobile-link">Dự án Lập trình</a></li>
+      <li><a href="#contact" class="mobile-link">Thông tin Liên hệ</a></li>
+    </ul>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- MAIN SCROLLABLE WEB VIEW -->
+  <main class="main-content" id="web-view">
+
+    <!-- 1. HERO SECTION (Cover) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-media" style="background-image: url('img/cover-bg.png');" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <!-- Stamp Badge (Rotating circle badge) -->
+        <div class="stamp-badge-wrap">
+          <div class="circular-stamp" id="circular-stamp">
+            <svg viewBox="0 0 200 200" class="rotating-text-svg">
+              <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" fill="none" />
+              <text>
+                <textPath href="#circlePath" startOffset="0%">
+                  • PORTFOLIO • PHẠM QUỐC HUY • CREATIVE • DEVELOPER •
+                </textPath>
+              </text>
+            </svg>
+            <div class="stamp-center">
+              <img src="img/icon-star.svg" alt="star" class="stamp-star">
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Title -->
+        <div class="hero-title-container">
+          <div class="sparkle-wrap top-left">
+            <img src="img/icon-star.svg" alt="sparkle" class="sparkle-icon">
+          </div>
+          <h1 class="hero-title">Portfolio</h1>
+          <div class="sparkle-wrap bottom-right">
+            <img src="img/icon-star.svg" alt="sparkle" class="sparkle-icon">
+          </div>
+        </div>
+
+        <p class="hero-subtitle">
+          <span class="hero-name-badge">Phạm Quốc Huy</span>
+          <span class="hero-tagline">Content Creator • Video Editor • Writer • Software Developer</span>
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">
+            <span>Khám phá Portfolio</span>
+            <img src="img/icon-arrow.svg" alt="arrow" class="btn-arrow-icon">
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Liên hệ hợp tác</span>
+          </a>
+        </div>
+
+        <!-- Quick highlights row -->
+        <div class="hero-stats-row">
+          <div class="stat-pill">
+            <span class="stat-number">1+ Năm</span>
+            <span class="stat-desc">Kinh nghiệm thực chiến</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <span class="stat-number">AI & Video</span>
+            <span class="stat-desc">Kỹ thuật & Xu hướng mới</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <span class="stat-number">Fullstack</span>
+            <span class="stat-desc">Website & Desktop Apps</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down-indicator" aria-label="Cuộn xuống để xem chi tiết">
+        <span class="mouse-icon"></span>
+        <span class="scroll-text">Cuộn xuống</span>
+      </a>
+    </section>
+
+
+    <!-- 2. ABOUT SECTION (Thông tin) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header with badge -->
+        <div class="section-badge-header">
+          <div class="badge-swoosh-container">
+            <img src="img/swoosh-badge.svg" alt="badge decorative" class="swoosh-svg">
+            <img src="img/icon-star.svg" alt="star" class="badge-star star-left">
+            <h2 class="section-title italic-accent">Thông tin</h2>
+            <img src="img/icon-star.svg" alt="star" class="badge-star star-right">
+          </div>
+          <p class="section-lead">Giới thiệu tổng quan về bản thân, học vấn và định hướng phát triển</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Polaroid Photo -->
+          <div class="polaroid-wrapper">
+            <div class="polaroid-card">
+              <!-- Tape sticker on top -->
+              <div class="tape-sticker-wrap">
+                <img src="img/tape-sticker.png" alt="tape sticker" class="tape-sticker-img">
+              </div>
+              <!-- Polaroid frame and photo -->
+              <div class="polaroid-photo-frame">
+                <img src="img/avatar-huy.png" alt="Ảnh chân dung Phạm Quốc Huy" class="polaroid-photo">
+              </div>
+              <div class="polaroid-caption">
+                <span class="caption-name">Phạm Quốc Huy</span>
+                <span class="caption-date">24.06.2003</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Bio & Info Cards -->
+          <div class="about-content">
+            <!-- Personal Quick Info Cards -->
+            <div class="info-chips-grid">
+              <div class="info-chip">
+                <div class="chip-icon-box">
+                  <img src="img/icon-user.svg?v=60" alt="Họ và tên" class="chip-icon">
+                </div>
+                <div class="chip-text">
+                  <span class="chip-label">Họ và tên</span>
+                  <strong class="chip-value">Phạm Quốc Huy</strong>
+                </div>
+              </div>
+
+              <div class="info-chip">
+                <div class="chip-icon-box">
+                  <img src="img/icon-calendar.svg?v=60" alt="Ngày sinh" class="chip-icon">
+                </div>
+                <div class="chip-text">
+                  <span class="chip-label">Ngày sinh</span>
+                  <strong class="chip-value">24/06/2003</strong>
+                </div>
+              </div>
+
+              <div class="info-chip chip-wide">
+                <div class="chip-icon-box">
+                  <img src="img/icon-education.svg?v=60" alt="Học vấn" class="chip-icon">
+                </div>
+                <div class="chip-text">
+                  <span class="chip-label">Học vấn & Chuyên ngành</span>
+                  <strong class="chip-value">Đại học Khoa học Huế - Công nghệ thông tin</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bio Statement -->
+            <div class="bio-card">
+              <h3 class="bio-heading">Đam mê công nghệ & Luôn chủ động học hỏi</h3>
+              <p class="bio-text">
+                Tốt nghiệp ngành <strong>Công nghệ thông tin</strong> với sự đam mê công nghệ và luôn chủ động học hỏi.
+                Là người chăm chỉ, có tinh thần trách nhiệm và kiên trì trong công việc.
+                Có thể học và thành thạo với những thứ mới trong khoảng thời gian ngắn.
+                Mong muốn được phát triển bản thân trong môi trường chuyên nghiệp và tích luỹ thêm nhiều kinh nghiệm
+                trong công việc.
+              </p>
+            </div>
+
+            <!-- Skill Tags -->
+            <div class="skills-highlight">
+              <h4 class="skills-title">Kỹ năng & Công cụ nổi bật:</h4>
+              <div class="tags-cloud">
+                <span class="skill-tag highlight">AI Video & Storytelling</span>
+                <span class="skill-tag highlight">Workflow / Automation AI</span>
+                <span class="skill-tag highlight">Seedance / Kling / Veo / PixVerse</span>
+                <span class="skill-tag highlight">GPT-Image / Google-Banana / Midjourney</span>
+                <span class="skill-tag highlight">CapCut Pro</span>
+                <span class="skill-tag">Fullstack Web Development</span>
+                <span class="skill-tag">HTML / CSS / JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3. EXPERIENCE SECTION (Kinh nghiệm) -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-badge-header">
+          <div class="badge-swoosh-container">
+            <img src="img/swoosh-badge.svg" alt="badge decorative" class="swoosh-svg">
+            <img src="img/icon-star.svg" alt="star" class="badge-star star-left">
+            <h2 class="section-title italic-accent">Kinh nghiệm</h2>
+            <img src="img/icon-star.svg" alt="star" class="badge-star star-right">
+          </div>
+          <p class="section-lead">
+            Trong hơn một năm qua, tôi đã tích luỹ được nhiều kinh nghiệm đa dạng khi làm việc với các cá nhân, đội ngũ
+            công ty và các nhà sáng tạo khác.
+          </p>
+        </div>
+
+        <div class="roles-grid">
+          <!-- Role 1: Content Creator -->
+          <div class="role-card" data-category="ai">
+            <div class="role-card-header">
+              <div class="role-icon-bullet">
+                <img src="img/icon-star.svg" alt="icon bullet" class="bullet-star">
+              </div>
+              <span class="role-badge">AI & Social</span>
+            </div>
+            <h3 class="role-title">Content Creator</h3>
+            <p class="role-desc">
+              Sáng tạo nội dung video và hình ảnh theo xu hướng bằng AI cho mạng xã hội và nhãn hàng.
+            </p>
+            <div class="role-bullets">
+              <div class="role-bullet-item">✓ Kể chuyện bằng hình ảnh AI (Storytelling)</div>
+              <div class="role-bullet-item">✓ Nội dung bắt trend đa nền tảng (TikTok, Reels, Shorts)</div>
+              <div class="role-bullet-item">✓ Tối ưu chuyển đổi qua Video Marketing</div>
+            </div>
+            <a href="#ai-products" class="role-link">Xem sản phẩm AI ↗</a>
+          </div>
+
+          <!-- Role 2: Editor -->
+          <div class="role-card" data-category="video">
+            <div class="role-card-header">
+              <div class="role-icon-bullet">
+                <img src="img/icon-star.svg" alt="icon bullet" class="bullet-star">
+              </div>
+              <span class="role-badge">Video Production</span>
+            </div>
+            <h3 class="role-title">Editor</h3>
+            <p class="role-desc">
+              Biên tập video theo yêu cầu và ứng dụng các xu hướng vào nội dung.
+            </p>
+            <div class="role-bullets">
+              <div class="role-bullet-item">✓ Dựng phim, cắt ghép và timing nhịp điệu chuyên nghiệp</div>
+              <div class="role-bullet-item">✓ Chỉnh màu (Color Grading) & Thiết kế âm thanh (Sound FX)</div>
+              <div class="role-bullet-item">✓ Sản xuất TVC quảng cáo & video thời trang thương hiệu</div>
+            </div>
+            <a href="#editor" class="role-link">Xem video biên tập ↗</a>
+          </div>
+
+          <!-- Role 3: Content Writer -->
+          <div class="role-card" data-category="writing">
+            <div class="role-card-header">
+              <div class="role-icon-bullet">
+                <img src="img/icon-star.svg" alt="icon bullet" class="bullet-star">
+              </div>
+              <span class="role-badge">Creative Copy</span>
+            </div>
+            <h3 class="role-title">Content Writer</h3>
+            <p class="role-desc">
+              Lên ý tưởng và sáng tạo nội dung quảng cáo, thương hiệu và SEO theo yêu cầu khách hàng hoặc định hướng
+              riêng.
+            </p>
+            <div class="role-bullets">
+              <div class="role-bullet-item">✓ Viết kịch bản video viral (Hook, Story, Call-to-action)</div>
+              <div class="role-bullet-item">✓ Định hướng tiếng nói thương hiệu (Brand Voice)</div>
+              <div class="role-bullet-item">✓ Bài viết chuẩn SEO và nội dung quảng cáo đa kênh</div>
+            </div>
+            <a href="#contact" class="role-link">Liên hệ hợp tác ↗</a>
+          </div>
+
+          <!-- Role 4: Developer -->
+          <div class="role-card" data-category="dev">
+            <div class="role-card-header">
+              <div class="role-icon-bullet">
+                <img src="img/icon-star.svg" alt="icon bullet" class="bullet-star">
+              </div>
+              <span class="role-badge">Fullstack Dev</span>
+            </div>
+            <h3 class="role-title">Developer</h3>
+            <p class="role-desc">
+              Phát triển website, app desktop với cả Frontend và Backend, ứng dụng vào quản lý.
+            </p>
+            <div class="role-bullets">
+              <div class="role-bullet-item">✓ Thiết kế giao diện hiện đại, tối ưu trải nghiệm người dùng</div>
+              <div class="role-bullet-item">✓ Xây dựng hệ thống Backend, Database & Cloud Deployment</div>
+              <div class="role-bullet-item">✓ Sản phẩm thực tế: quanlychitieu.cloud, coffood.top</div>
+            </div>
+            <a href="#developer" class="role-link">Xem dự án website ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 4. AI CONTENT CREATOR SECTION (Sản phẩm AI) -->
+    <section class="section showcase-section" id="ai-products">
+      <div class="container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-tag-badge">Content Creator</span>
+          <h2 class="showcase-main-title">Sản phẩm AI</h2>
+          <p class="showcase-desc">
+            Các sản phẩm video được sáng tạo bằng AI, tập trung vào storytelling, quảng cáo và nội dung trending cho
+            mạng xã hội.
+          </p>
+        </div>
+
+        <!-- 4 Phone Mockups Grid -->
+        <div class="phone-showcase-grid">
+          <!-- Video 1: Storytelling - Vlog -->
+          <div class="phone-showcase-card" data-video="img/video-vlog.mp4" data-title="Storytelling - Vlog">
+            <div class="phone-frame-container">
+              <div class="phone-screen">
+                <video class="showcase-video" poster="img/poster-vlog.jpg" loop playsinline preload="metadata">
+                  <source src="img/video-vlog.mp4" type="video/mp4">
+                  Trình duyệt không hỗ trợ thẻ video.
+                </video>
+                <div class="video-overlay-btn" title="Bấm để xem video">
+                  <span class="play-icon-triangle">▶</span>
+                </div>
+                <div class="sound-toggle-btn" title="Bật/Tắt âm thanh">
+                  <span class="sound-icon">🔊</span>
+                </div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <h3 class="phone-card-title">Storytelling - Vlog</h3>
+              <p class="phone-card-genre">Nghệ thuật kể chuyện bằng AI</p>
+              <button class="btn btn-sm btn-outline open-modal-btn">Xem chi tiết ↗</button>
+            </div>
+          </div>
+
+          <!-- Video 2: VFX -->
+          <div class="phone-showcase-card" data-video="img/video-vfx.mp4" data-title="VFX">
+            <div class="phone-frame-container">
+              <div class="phone-screen">
+                <video class="showcase-video" poster="img/poster-vfx.jpg" loop playsinline preload="metadata">
+                  <source src="img/video-vfx.mp4" type="video/mp4">
+                  Trình duyệt không hỗ trợ thẻ video.
+                </video>
+                <div class="video-overlay-btn" title="Bấm để xem video">
+                  <span class="play-icon-triangle">▶</span>
+                </div>
+                <div class="sound-toggle-btn" title="Bật/Tắt âm thanh">
+                  <span class="sound-icon">🔊</span>
+                </div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <h3 class="phone-card-title">VFX</h3>
+              <p class="phone-card-genre">Kỹ xảo hình ảnh & Hiệu ứng ảo</p>
+              <button class="btn btn-sm btn-outline open-modal-btn">Xem chi tiết ↗</button>
+            </div>
+          </div>
+
+          <!-- Video 3: Horror -->
+          <div class="phone-showcase-card" data-video="img/video-horror.mp4" data-title="Horror">
+            <div class="phone-frame-container">
+              <div class="phone-screen">
+                <video class="showcase-video" poster="img/poster-horror.jpg" loop playsinline preload="metadata">
+                  <source src="img/video-horror.mp4" type="video/mp4">
+                  Trình duyệt không hỗ trợ thẻ video.
+                </video>
+                <div class="video-overlay-btn" title="Bấm để xem video">
+                  <span class="play-icon-triangle">▶</span>
+                </div>
+                <div class="sound-toggle-btn" title="Bật/Tắt âm thanh">
+                  <span class="sound-icon">🔊</span>
+                </div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <h3 class="phone-card-title">Horror</h3>
+              <p class="phone-card-genre">Phim ngắn kinh dị kịch tính</p>
+              <button class="btn btn-sm btn-outline open-modal-btn">Xem chi tiết ↗</button>
+            </div>
+          </div>
+
+          <!-- Video 4: Affiliate -->
+          <div class="phone-showcase-card" data-video="img/video-affiliate.mp4" data-title="Affiliate">
+            <div class="phone-frame-container">
+              <div class="phone-screen">
+                <video class="showcase-video" poster="img/poster-affiliate.jpg" loop playsinline preload="metadata">
+                  <source src="img/video-affiliate.mp4" type="video/mp4">
+                  Trình duyệt không hỗ trợ thẻ video.
+                </video>
+                <div class="video-overlay-btn" title="Bấm để xem video">
+                  <span class="play-icon-triangle">▶</span>
+                </div>
+                <div class="sound-toggle-btn" title="Bật/Tắt âm thanh">
+                  <span class="sound-icon">🔊</span>
+                </div>
+              </div>
+            </div>
+            <div class="phone-card-meta">
+              <h3 class="phone-card-title">Affiliate</h3>
+              <p class="phone-card-genre">Video tiếp thị sản phẩm chuyển đổi cao</p>
+              <button class="btn btn-sm btn-outline open-modal-btn">Xem chi tiết ↗</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 5. EDITOR SECTION (Biên tập Video) -->
+    <section class="section editor-section" id="editor">
+      <div class="container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-tag-badge">Video Production</span>
+          <h2 class="showcase-main-title">Editor</h2>
+          <p class="showcase-desc">
+            Biên tập và tối ưu video theo yêu cầu, kết hợp xu hướng mới để nâng cao hiệu quả nội dung.
+          </p>
+        </div>
+
+        <div class="editor-showcase-row">
+          <!-- CongSuit (Vertical Format) -->
+          <div class="editor-card vertical-card" data-video="img/video-congsuit.mp4" data-title="CongSuit Video">
+            <div class="editor-media-box">
+              <div class="editor-frame-box phone-frame-container">
+                <div class="phone-screen">
+                  <video class="showcase-video" poster="img/poster-congsuit.jpg" loop playsinline preload="metadata">
+                    <source src="img/video-congsuit.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-overlay-btn"><span class="play-icon-triangle">▶</span></div>
+                  <div class="sound-toggle-btn"><span class="sound-icon">🔊</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="editor-card-info">
+              <h3 class="editor-project-title">CongSuit</h3>
+              <p class="editor-project-desc">Video thời trang & phong cách thương hiệu cao cấp với nhịp điệu cắt dựng
+                hiện đại.</p>
+              <button class="btn btn-sm btn-outline open-modal-btn">Phóng to xem đầy đủ ↗</button>
+            </div>
+          </div>
+
+          <!-- TVC AsianAcademy (Widescreen Format) -->
+          <div class="editor-card horizontal-card" data-video="img/video-asianacademy.mp4"
+            data-title="TVC AsianAcademy">
+            <div class="editor-media-box">
+              <div class="tvc-frame-box">
+                <div class="video-16-9-wrapper">
+                  <video class="showcase-video horizontal-video" poster="img/poster-asianacademy.jpg" loop playsinline
+                    preload="metadata">
+                    <source src="img/video-asianacademy.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-overlay-btn"><span class="play-icon-triangle">▶</span></div>
+                  <div class="sound-toggle-btn"><span class="sound-icon">🔊</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="editor-card-info">
+              <h3 class="editor-project-title">TVC AsianAcademy</h3>
+              <p class="editor-project-desc">Video TVC giới thiệu học viện với kỹ thuật dựng hình ảnh, âm thanh chuẩn
+                truyền thông chuyên nghiệp.</p>
+              <button class="btn btn-sm btn-outline open-modal-btn">Phóng to xem đầy đủ ↗</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 6. DEVELOPER SECTION (Lập trình) -->
+    <section class="section developer-section" id="developer">
+      <div class="container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-tag-badge">Web & Software</span>
+          <h2 class="showcase-main-title">Developer</h2>
+          <p class="showcase-desc">
+            Phát triển website, app desktop với cả Frontend và Backend, ứng dụng vào quản lý.
+          </p>
+        </div>
+
+        <div class="developer-showcase-list">
+          <!-- Project 1: quanlychitieu.cloud -->
+          <div class="laptop-showcase-container">
+            <!-- Laptop mockup graphic with screen -->
+            <div class="laptop-mockup-wrapper">
+              <a href="https://quanlychitieu.cloud" target="_blank" rel="noopener noreferrer" class="laptop-link"
+                title="Mở trang web quanlychitieu.cloud">
+                <img src="img/laptop-quanlychitieu.png" alt="quanlychitieu.cloud trên màn hình laptop"
+                  class="laptop-img">
+                <div class="laptop-hover-badge">
+                  <span>Truy cập quanlychitieu.cloud ↗</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project Details Card -->
+            <div class="project-details-card">
+              <div class="project-header">
+                <div class="status-indicator">
+                  <span class="status-dot"></span>
+                  <span class="status-text">Live Production</span>
+                </div>
+                <h3 class="project-title">quanlychitieu.cloud</h3>
+              </div>
+
+              <p class="project-summary">
+                Hệ thống quản lý tài chính và chi tiêu thông minh chạy trên nền tảng đám mây.
+                Giúp cá nhân và nhóm theo dõi ngân sách, thống kê dòng tiền với biểu đồ trực quan,
+                đồng bộ dữ liệu bảo mật và hiệu năng mượt mà trên mọi thiết bị.
+              </p>
+
+              <div class="project-specs-grid">
+                <div class="spec-item">
+                  <span class="spec-label">Vai trò:</span>
+                  <span class="spec-value">Fullstack Developer</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Kiến trúc:</span>
+                  <span class="spec-value">Frontend & Backend Cloud</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Nền tảng:</span>
+                  <span class="spec-value">Web Application & Mobile Responsive</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Bảo mật:</span>
+                  <span class="spec-value">Xác thực người dùng & Dữ liệu đám mây</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://quanlychitieu.cloud" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Truy cập quanlychitieu.cloud</span>
+                  <span class="external-icon">↗</span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <span>Đặt hàng dự án tương tự</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: coffood.top (Gợi Ý Quán) -->
+          <div class="laptop-showcase-container reverse">
+            <!-- Project Details Card (Left on Desktop) -->
+            <div class="project-details-card">
+              <div class="project-header">
+                <div class="status-indicator">
+                  <span class="status-dot"></span>
+                  <span class="status-text">Live Production</span>
+                </div>
+                <h3 class="project-title">coffood.top</h3>
+              </div>
+
+              <p class="project-summary">
+                Nền tảng khám phá địa điểm ăn uống & cà phê chill chất lượng.
+                Tích hợp tính năng quay ngẫu nhiên "Hôm nay ăn gì?", tìm kiếm thông minh theo món ngon & địa chỉ,
+                bộ lọc theo từng thành phố và hệ thống gợi ý món từ người dùng thật.
+              </p>
+
+              <div class="project-specs-grid">
+                <div class="spec-item">
+                  <span class="spec-label">Vai trò:</span>
+                  <span class="spec-value">Fullstack Web Developer</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Tính năng nổi bật:</span>
+                  <span class="spec-value">Quán ăn, Cafe, Vòng quay ngẫu nhiên</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Kiến trúc:</span>
+                  <span class="spec-value">SPA & MVC Architecture</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Giao diện:</span>
+                  <span class="spec-value">Modern UI/UX, Chuẩn Mobile-First</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://coffood.top/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Truy cập coffood.top</span>
+                  <span class="external-icon">↗</span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <span>Đặt hàng dự án tương tự</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Laptop mockup graphic with screen (Right on Desktop) -->
+            <div class="laptop-mockup-wrapper">
+              <a href="https://coffood.top/" target="_blank" rel="noopener noreferrer" class="laptop-link"
+                title="Mở trang web coffood.top">
+                <img src="img/laptop-coffood.png?v=65" alt="coffood.top trên màn hình laptop" class="laptop-img">
+                <div class="laptop-hover-badge">
+                  <span>Truy cập coffood.top ↗</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 7. CONTACT SECTION (Liên hệ) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-badge-header">
+          <div class="badge-swoosh-container">
+            <img src="img/swoosh-badge.svg" alt="badge decorative" class="swoosh-svg">
+            <img src="img/icon-star.svg" alt="star" class="badge-star star-left">
+            <h2 class="section-title italic-accent">Contact</h2>
+            <img src="img/icon-star.svg" alt="star" class="badge-star star-right">
+          </div>
+          <p class="section-lead">
+            Sẵn sàng kết nối và hợp tác trong các dự án sáng tạo nội dung, biên tập video và phát triển phần mềm.
+          </p>
+        </div>
+
+        <div class="contact-cards-grid">
+          <!-- Card 1: Email -->
+          <div class="contact-card">
+            <div class="contact-icon-box">
+              <img src="img/icon-email.svg?v=60" alt="Email icon" class="contact-icon-img">
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-label">Email</span>
+              <a href="mailto:phamquoch2@gmail.com" class="contact-value" id="email-text">phamquoch2@gmail.com</a>
+            </div>
+            <button class="copy-btn" data-copy="phamquoch2@gmail.com" title="Sao chép email">
+              <span class="copy-icon">📋</span>
+              <span class="copy-label">Sao chép</span>
+            </button>
+          </div>
+
+          <!-- Card 2: Phone -->
+          <div class="contact-card">
+            <div class="contact-icon-box">
+              <img src="img/icon-phone.svg?v=60" alt="Phone icon" class="contact-icon-img">
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-label">Số điện thoại</span>
+              <a href="tel:0363210468" class="contact-value" id="phone-text">036.3210.468</a>
+            </div>
+            <button class="copy-btn" data-copy="0363210468" title="Sao chép số điện thoại">
+              <span class="copy-icon">📞</span>
+              <span class="copy-label">Gọi / Sao chép</span>
+            </button>
+          </div>
+
+          <!-- Card 3: Location -->
+          <div class="contact-card">
+            <div class="contact-icon-box">
+              <img src="img/icon-location.svg?v=60" alt="Location icon" class="contact-icon-img">
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-label">Khu vực làm việc</span>
+              <span class="contact-value">Huế, Việt Nam</span>
+            </div>
+            <span class="status-badge-inline">Toàn quốc / Remote</span>
+          </div>
+
+          <!-- Card 4: Facebook -->
+          <div class="contact-card">
+            <div class="contact-icon-box">
+              <img src="img/icon-facebook.svg?v=60" alt="Facebook icon" class="contact-icon-img">
+            </div>
+            <div class="contact-card-body">
+              <span class="contact-label">Facebook cá nhân</span>
+              <a href="https://www.facebook.com/PQHowf" target="_blank" rel="noopener noreferrer"
+                class="contact-value">facebook.com/PQHowf</a>
+            </div>
+            <a href="https://www.facebook.com/PQHowf" target="_blank" rel="noopener noreferrer" class="visit-link-btn"
+              title="Mở Facebook">
+              <span>Ghé thăm</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="img/logo-icon.png?v=10" alt="PQH Logo" class="footer-logo-img" width="32" height="32"
+            style="width: 32px; height: 32px; max-width: 32px; max-height: 32px; object-fit: contain; flex-shrink: 0; display: block; border-radius: 50%;">
+          <p>© 2026 Phạm Quốc Huy • Portfolio cá nhân. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Về đầu trang ↑</a>
+          <a href="https://www.facebook.com/PQHowf" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://quanlychitieu.cloud" target="_blank" rel="noopener noreferrer">quanlychitieu.cloud</a>
+          <a href="https://coffood.top/" target="_blank" rel="noopener noreferrer">coffood.top</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+
+  <!-- SLIDE DECK CANVA PRESENTATION MODE (Full Replica of 7 Canva Slides) -->
+  <div class="canva-slide-mode-container" id="slide-mode-container" aria-hidden="true">
+    <!-- Top Bar Controls -->
+    <div class="slide-deck-header">
+      <div class="slide-deck-title">
+        <span class="deck-badge">Canva Presentation</span>
+        <span class="deck-name">Porfolio Phạm Quốc Huy</span>
+      </div>
+      <div class="slide-header-right">
+        <span class="slide-counter" id="slide-counter">Slide 1 / 7</span>
+        <button class="slide-exit-btn" id="exit-slide-mode" title="Trở về chế độ Web">✕ Đóng Trình Chiếu</button>
+      </div>
+    </div>
+
+    <!-- Slides Stage -->
+    <div class="slide-viewport">
+      <div class="slide-stage" id="slide-stage">
+
+        <!-- CANVA SLIDE 1: Cover -->
+        <div class="canva-slide active" data-slide="1">
+          <div class="c-slide-inner c-slide-1">
+            <div class="c-bg-cover" style="background-image: url('img/cover-bg.png');"></div>
+            <div class="c-slide-content">
+              <div class="c-stamp-circle">
+                <svg viewBox="0 0 200 200">
+                  <path id="cPath1" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" fill="none" />
+                  <text>
+                    <textPath href="#cPath1">• PORTFOLIO • PHẠM QUỐC HUY • CREATIVE •</textPath>
+                  </text>
+                </svg>
+                <div class="c-stamp-star"><img src="img/icon-star.svg" alt="star"></div>
+              </div>
+              <div class="c-title-box">
+                <img src="img/icon-star.svg" alt="star" class="c-star-top">
+                <h1 class="c-main-title">Portfolio</h1>
+                <img src="img/icon-star.svg" alt="star" class="c-star-bottom">
+              </div>
+              <p class="c-author-name">Phạm Quốc Huy</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CANVA SLIDE 2: Thông tin -->
+        <div class="canva-slide" data-slide="2">
+          <div class="c-slide-inner c-slide-2">
+            <div class="c-header-oval">
+              <img src="img/swoosh-badge.svg" alt="badge" class="c-oval-svg">
+              <img src="img/icon-star.svg" alt="star" class="c-star-l">
+              <h2 class="c-section-heading">Thông tin</h2>
+              <img src="img/icon-star.svg" alt="star" class="c-star-r">
+            </div>
+
+            <div class="c-slide2-grid">
+              <!-- Polaroid photo -->
+              <div class="c-polaroid-box">
+                <img src="img/tape-sticker.png" alt="tape" class="c-tape-img">
+                <div class="c-polaroid-frame-img">
+                  <img src="img/avatar-huy.png" alt="Phạm Quốc Huy" class="c-photo">
+                </div>
+              </div>
+
+              <!-- Information details -->
+              <div class="c-details-box">
+                <div class="c-info-row">
+                  <img src="img/icon-user.svg?v=60" alt="user" class="c-info-icon">
+                  <span class="c-info-text">Phạm Quốc Huy</span>
+                </div>
+                <div class="c-info-row">
+                  <img src="img/icon-calendar.svg?v=60" alt="calendar" class="c-info-icon">
+                  <span class="c-info-text">24/06/2003</span>
+                </div>
+                <div class="c-info-row">
+                  <img src="img/icon-education.svg?v=60" alt="education" class="c-info-icon">
+                  <span class="c-info-text">Đại học Khoa học Huế - Công nghệ thông tin</span>
+                </div>
+
+                <p class="c-bio-paragraph">
+                  Tốt nghiệp ngành Công nghệ thông tin với sự đam mê công nghệ và luôn chủ động học hỏi.
+                  Là người chăm chỉ, có tinh thần trách nhiệm và kiên trì trong công việc.
+                  Có thể học và thành thạo với những thứ mới trong khoảng thời gian ngắn.
+                  Mong muốn được phát triển bản thân trong môi trường chuyên nghiệp và tích luỹ thêm nhiều kinh nghiệm
+                  trong công việc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CANVA SLIDE 3: Kinh nghiệm -->
+        <div class="canva-slide" data-slide="3">
+          <div class="c-slide-inner c-slide-3">
+            <div class="c-header-oval">
+              <img src="img/swoosh-badge.svg" alt="badge" class="c-oval-svg">
+              <img src="img/icon-star.svg" alt="star" class="c-star-l">
+              <h2 class="c-section-heading">Kinh nghiệm</h2>
+              <img src="img/icon-star.svg" alt="star" class="c-star-r">
+            </div>
+
+            <p class="c-exp-lead">
+              Trong hơn một năm qua, tôi đã tích luỹ được nhiều kinh nghiệm đa dạng khi làm việc với các cá nhân, đội
+              ngũ công ty và các nhà sáng tạo khác.
+            </p>
+
+            <div class="c-exp-2x2">
+              <div class="c-exp-item">
+                <div class="c-exp-icon"><img src="img/icon-star.svg" alt="star"></div>
+                <div>
+                  <h4 class="c-exp-title">Content Creator</h4>
+                  <p class="c-exp-text">Sáng tạo nội dung video và hình ảnh theo xu hướng bằng AI cho mạng xã hội và
+                    nhãn hàng.</p>
+                </div>
+              </div>
+
+              <div class="c-exp-item">
+                <div class="c-exp-icon"><img src="img/icon-star.svg" alt="star"></div>
+                <div>
+                  <h4 class="c-exp-title">Editor</h4>
+                  <p class="c-exp-text">Biên tập video theo yêu cầu và ứng dụng các xu hướng vào nội dung.</p>
+                </div>
+              </div>
+
+              <div class="c-exp-item">
+                <div class="c-exp-icon"><img src="img/icon-star.svg" alt="star"></div>
+                <div>
+                  <h4 class="c-exp-title">Content Writer</h4>
+                  <p class="c-exp-text">Lên ý tưởng và sáng tạo nội dung quảng cáo, thương hiệu và SEO theo yêu cầu
+                    khách hàng hoặc định hướng riêng.</p>
+                </div>
+              </div>
+
+              <div class="c-exp-item">
+                <div class="c-exp-icon"><img src="img/icon-star.svg" alt="star"></div>
+                <div>
+                  <h4 class="c-exp-title">Developer</h4>
+                  <p class="c-exp-text">Phát triển website, app desktop với cả Frontend và Backend, ứng dụng vào quản
+                    lý.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CANVA SLIDE 4: Content Creator - Sản phẩm AI -->
+        <div class="canva-slide" data-slide="4">
+          <div class="c-slide-inner c-slide-4">
+            <h3 class="c-category-label">Content Creator</h3>
+            <h2 class="c-slide-big-title">Sản phẩm AI</h2>
+            <p class="c-slide-desc">Các sản phẩm video được sáng tạo bằng AI, tập trung vào storytelling, quảng cáo và
+              nội dung trending cho mạng xã hội.</p>
+
+            <div class="c-phones-row">
+              <div class="c-phone-col">
+                <div class="c-phone-wrapper">
+                  <video class="c-slide-video" poster="img/poster-vlog.jpg" loop muted playsinline>
+                    <source src="img/video-vlog.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h4 class="c-phone-label">Storytelling - Vlog</h4>
+              </div>
+
+              <div class="c-phone-col">
+                <div class="c-phone-wrapper">
+                  <video class="c-slide-video" poster="img/poster-vfx.jpg" loop muted playsinline>
+                    <source src="img/video-vfx.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h4 class="c-phone-label">VFX</h4>
+              </div>
+
+              <div class="c-phone-col">
+                <div class="c-phone-wrapper">
+                  <video class="c-slide-video" poster="img/poster-horror.jpg" loop muted playsinline>
+                    <source src="img/video-horror.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h4 class="c-phone-label">Horror</h4>
+              </div>
+
+              <div class="c-phone-col">
+                <div class="c-phone-wrapper">
+                  <video class="c-slide-video" poster="img/poster-affiliate.jpg" loop muted playsinline>
+                    <source src="img/video-affiliate.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h4 class="c-phone-label">Affiliate</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CANVA SLIDE 5: Editor -->
+        <div class="canva-slide" data-slide="5">
+          <div class="c-slide-inner c-slide-5">
+            <h2 class="c-slide-big-title">Editor</h2>
+            <p class="c-slide-desc">Biên tập và tối ưu video theo yêu cầu, kết hợp xu hướng mới để nâng cao hiệu quả nội
+              dung.</p>
+
+            <div class="c-editor-row">
+              <div class="c-editor-col">
+                <div class="c-phone-wrapper">
+                  <video class="c-slide-video" poster="img/poster-congsuit.jpg" loop muted playsinline>
+                    <source src="img/video-congsuit.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h4 class="c-phone-label">CongSuit</h4>
+              </div>
+
+              <div class="c-editor-col tvc-col">
+                <div class="c-tvc-wrapper">
+                  <video class="c-slide-video" poster="img/poster-asianacademy.jpg" loop muted playsinline>
+                    <source src="img/video-asianacademy.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h4 class="c-phone-label">TVC AsianAcademy</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CANVA SLIDE 6: Developer -->
+        <div class="canva-slide" data-slide="6">
+          <div class="c-slide-inner c-slide-6">
+            <h2 class="c-slide-big-title">Developer</h2>
+            <p class="c-slide-desc">Phát triển website, app desktop với cả Frontend và Backend, ứng dụng vào quản lý.
+            </p>
+
+            <div class="c-dev-laptop-row">
+              <div class="c-dev-laptop-box">
+                <a href="https://quanlychitieu.cloud" target="_blank" rel="noopener noreferrer">
+                  <img src="img/laptop-quanlychitieu.png" alt="quanlychitieu.cloud" class="c-laptop-img">
+                </a>
+                <h4 class="c-laptop-label">quanlychitieu.cloud</h4>
+              </div>
+              <div class="c-dev-laptop-box">
+                <a href="https://coffood.top/" target="_blank" rel="noopener noreferrer">
+                  <img src="img/laptop-coffood.png?v=65" alt="coffood.top" class="c-laptop-img">
+                </a>
+                <h4 class="c-laptop-label">coffood.top</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CANVA SLIDE 7: Contact -->
+        <div class="canva-slide" data-slide="7">
+          <div class="c-slide-inner c-slide-7">
+            <div class="c-header-oval">
+              <img src="img/swoosh-badge.svg" alt="badge" class="c-oval-svg">
+              <img src="img/icon-star.svg" alt="star" class="c-star-l">
+              <h2 class="c-section-heading">Contact</h2>
+              <img src="img/icon-star.svg" alt="star" class="c-star-r">
+            </div>
+
+            <div class="c-contact-2x2">
+              <div class="c-contact-item">
+                <img src="img/icon-email.svg?v=60" alt="email" class="c-c-icon">
+                <span class="c-c-text">phamquoch2@gmail.com</span>
+              </div>
+
+              <div class="c-contact-item">
+                <img src="img/icon-phone.svg?v=60" alt="phone" class="c-c-icon">
+                <span class="c-c-text">036.3210.468</span>
+              </div>
+
+              <div class="c-contact-item">
+                <img src="img/icon-location.svg?v=60" alt="location" class="c-c-icon">
+                <span class="c-c-text">Huế, Việt Nam</span>
+              </div>
+
+              <div class="c-contact-item">
+                <img src="img/icon-facebook.svg?v=60" alt="facebook" class="c-c-icon">
+                <a href="https://www.facebook.com/PQHowf" target="_blank" rel="noopener noreferrer"
+                  class="c-c-text link">facebook.com/PQHowf</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Navigation Bar for Slides -->
+    <div class="slide-deck-footer">
+      <button class="slide-nav-btn prev-btn" id="slide-prev-btn" aria-label="Slide trước">
+        <span class="nav-arrow">‹</span>
+        <span>Slide Trước</span>
+      </button>
+
+      <div class="slide-dots" id="slide-dots">
+        <button class="dot-btn active" data-goto="1" title="Slide 1"></button>
+        <button class="dot-btn" data-goto="2" title="Slide 2"></button>
+        <button class="dot-btn" data-goto="3" title="Slide 3"></button>
+        <button class="dot-btn" data-goto="4" title="Slide 4"></button>
+        <button class="dot-btn" data-goto="5" title="Slide 5"></button>
+        <button class="dot-btn" data-goto="6" title="Slide 6"></button>
+        <button class="dot-btn" data-goto="7" title="Slide 7"></button>
+      </div>
+
+      <button class="slide-nav-btn next-btn" id="slide-next-btn" aria-label="Slide tiếp theo">
+        <span>Slide Tiếp</span>
+        <span class="nav-arrow">›</span>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- VIDEO THEATRE MODAL / LIGHTBOX -->
+  <div class="video-modal-backdrop" id="video-modal" aria-hidden="true">
+    <div class="video-modal-card">
+      <div class="video-modal-header">
+        <h4 class="modal-video-title" id="modal-video-title">Video Preview</h4>
+        <button class="modal-close-btn" id="close-modal-btn" aria-label="Đóng video">&times;</button>
+      </div>
+      <div class="video-modal-player-wrap">
+        <div class="modal-spinner" id="modal-spinner"></div>
+        <video id="modal-video-element" controls playsinline preload="auto">
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Đã sao chép vào bộ nhớ tạm!</span>
+  </div>
+
+  <script src="script.js?v=60"></script>
+</body>
+
+</html>
