@@ -1499,6 +1499,7 @@ img, video {
   grid-template-columns: 1.2fr 1fr;
   gap: 3.5rem;
   align-items: center;
+  min-width: 0;
 }
 
 .laptop-showcase-container.reverse {
@@ -1508,6 +1509,8 @@ img, video {
 .laptop-mockup-wrapper {
   position: relative;
   perspective: 1000px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .laptop-link {
@@ -1515,6 +1518,7 @@ img, video {
   position: relative;
   border-radius: var(--radius-md);
   transition: transform var(--transition-normal);
+  max-width: 100%;
 }
 
 .laptop-link:hover {
@@ -1526,6 +1530,8 @@ img, video {
   border-radius: var(--radius-md);
   display: block;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
+  max-width: 100%;
+  height: auto;
 }
 
 .laptop-hover-badge {
@@ -1544,6 +1550,7 @@ img, video {
   backdrop-filter: blur(8px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .laptop-link:hover .laptop-hover-badge {
@@ -1557,6 +1564,9 @@ img, video {
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   box-shadow: var(--shadow-md);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .project-header {
@@ -1592,6 +1602,8 @@ img, video {
   font-weight: 700;
   color: var(--color-primary);
   letter-spacing: -0.01em;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .project-summary {
@@ -1861,6 +1873,7 @@ img, video {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   font-size: 0.88rem;
   color: var(--color-text-secondary);
@@ -2713,5 +2726,160 @@ img, video {
   .showcase-desc,
   .contact-cards-grid {
     margin-bottom: 1.75rem;
+  }
+
+  /* Developer Section Responsive for Mobile (iPhone 15) */
+  .developer-showcase-list {
+    gap: 3rem;
+  }
+
+  .laptop-showcase-container,
+  .laptop-showcase-container.reverse {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .laptop-mockup-wrapper {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+
+  .laptop-link {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .laptop-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+  }
+
+  .project-details-card {
+    padding: 1.6rem 1.25rem;
+    border-radius: var(--radius-md);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .project-title {
+    font-size: 1.65rem;
+    line-height: 1.25;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-summary {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .project-specs-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .spec-item {
+    gap: 0.15rem;
+    min-width: 0;
+  }
+
+  .spec-value {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.88rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.88rem;
+  }
+
+  /* Footer Responsive for Mobile (iPhone 15) */
+  .site-footer {
+    padding: 2.25rem 0 2rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.65rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem 1.25rem;
+    font-size: 0.85rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-links a {
+    padding: 0.25rem 0.5rem;
+    transition: color var(--transition-fast);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .project-details-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .project-title {
+    font-size: 1.45rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
   }
 }
